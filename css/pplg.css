@@ -1,0 +1,180 @@
+
+        .hero-jurusan {
+            position: relative;
+            padding: 100px 0 80px;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero-jurusan-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .hero-jurusan::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(10, 30, 80, 0.75), rgba(10, 30, 80, 0.75));
+            z-index: 2;
+        }
+
+        .hero-jurusan .container {
+            position: relative;
+            z-index: 3;
+        }
+
+        .hero-jurusan h1 {
+            font-weight: 700;
+            font-size: 2.6rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .hero-jurusan p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1rem;
+            color: #cbd5e1;
+        }
+
+        .main-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.07);
+        }
+        .main-card h2 {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: #1e293b;
+        }
+        .main-card p {
+            color: #475569;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        .feature-box {
+            background: #f1f5f9;
+            border-radius: 12px;
+            padding: 18px 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+        .feature-icon.blue  { background: #dbeafe; color: #2563eb; }
+        .feature-icon.green { background: #dcfce7; color: #16a34a; }
+        .feature-box h6 {
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #1e293b;
+        }
+        .feature-box p {
+            font-size: 0.83rem;
+            margin: 0;
+            color: #64748b;
+        }
+
+        .fasilitas-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 0;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.92rem;
+            color: #374151;
+        }
+        .fasilitas-item:last-child { border-bottom: none; }
+        .badge-fasilitas {
+            font-size: 0.78rem;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .sidebar-card {
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .sidebar-header {
+            background: #1e293b;
+            color: white;
+            padding: 18px 24px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            text-align: center;
+        }
+        .sidebar-body {
+            padding: 24px;
+        }
+        .kuota-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.88rem;
+            color: #374151;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .btn-daftar {
+            display: block;
+            width: 100%;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 14px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .btn-daftar:hover {
+            background: #1d4ed8;
+            color: white;
+        }
+        .btn-kembali {
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+            font-size: 0.88rem;
+            color: #64748b;
+            text-decoration: none;
+        }
+        .btn-kembali:hover { color: #1e293b; }
+
+        .testimoni-img {
+            width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+            height: 200px;
+        }
+        .testimoni-box {
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            margin-top: 16px;
+        }

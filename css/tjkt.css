@@ -1,0 +1,247 @@
+:root {
+  --primary-green: #16a34a;
+  --dark-green: #15803d;
+  --dark-navy: #1e293b;
+  --text-main: #475569;
+  --text-muted: #64748b;
+  --bg-light: #f8f9fa;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --shadow: 0 4px 30px rgba(0, 0, 0, 0.07);
+}
+
+body {
+  font-family:
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background: var(--bg-light);
+  color: var(--dark-navy);
+  line-height: 1.6;
+}
+
+.hero-jurusan {
+  position: relative;
+  padding: 100px 0 80px;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-jurusan-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-jurusan::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(5, 50, 30, 0.8), rgba(5, 50, 30, 0.8));
+  z-index: 2;
+}
+
+.hero-jurusan .container {
+  position: relative;
+  z-index: 3;
+}
+
+.hero-jurusan h1 {
+  font-weight: 700;
+  font-size: 2.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.hero-jurusan p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #cbd5e1;
+}
+
+.main-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow);
+}
+
+.main-card h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.main-card p {
+  color: var(--text-main);
+  font-size: 0.95rem;
+}
+
+.feature-box {
+  background: #f1f5f9;
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  height: 100%;
+  transition: transform 0.2s;
+}
+
+.feature-box:hover {
+  transform: translateY(-3px);
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.feature-icon.green {
+  background: #dcfce7;
+  color: #16a34a;
+}
+.feature-icon.blue {
+  background: #dbeafe;
+  color: #2563eb;
+}
+.feature-icon.orange {
+  background: #ffedd5;
+  color: #ea580c;
+}
+
+.feature-box h6 {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.feature-box p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.fasilitas-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.92rem;
+}
+
+.badge-fasilitas {
+  font-size: 0.75rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.sidebar-card {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background: white;
+}
+
+.sidebar-header {
+  background: var(--dark-navy);
+  color: white;
+  padding: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sidebar-body {
+  padding: 24px;
+}
+
+.kuota-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.progress-kuota {
+  height: 12px;
+  border-radius: 10px;
+  background: #e2e8f0;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.progress-kuota .bar {
+  height: 100%;
+  background: #16a34a;
+  width: 91%;
+  animation: loadBar 2s ease forwards;
+}
+
+.btn-daftar {
+  display: block;
+  background: var(--primary-green);
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn-daftar:hover {
+  background: var(--dark-green);
+  color: white;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+}
+
+.btn-kembali {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.testimoni-img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  height: 220px;
+}
+
+.testimoni-box {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .hero-jurusan h1 {
+    font-size: 2rem;
+  }
+  .main-card {
+    padding: 25px;
+  }
+}
