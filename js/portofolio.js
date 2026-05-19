@@ -52,7 +52,7 @@ addEventListener("scroll", () => {
 function switchTab(t, b) {
   const y = window.scrollY;
   $("#tab-projects").style.display = t === "projects" ? "block" : "none";
-  $("#tab-skills").style.display = t === "skills" ? "block" : "none";
+  $("#tab-skills").style.display = t === "skills" ? "block" : "none"; 
   $$(".tab-btn").forEach((x) => x.classList.toggle("active", x === b));
   // Kunci scroll position agar tidak loncat saat tinggi konten berubah
   window.scrollTo({ top: y, behavior: "instant" });
